@@ -26,12 +26,6 @@ export const createElements = (...tags) => {
 
 export const addRefs = (element, ref) => (element.href = ref);
 
-export const compose =
-  (...fns) =>
-  (arg) => {
-    fns.reduce((acc, f) => f(acc));
-  };
-
 export const toggleMenu = (element, menu) => {
   let menuOpened = element.getAttribute("data-visible");
   if (menuOpened === "true") element.setAttribute("data-visible", "false");
