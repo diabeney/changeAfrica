@@ -35,6 +35,14 @@ export const toggleMenu = (element, menu) => {
   menu.classList.toggle("hide");
 };
 
+export const menuBtnHandler = function () {
+  const [menuBtn, closeBtn, nav] = getElement(".menu", ".close", "nav");
+
+  [menuBtn, closeBtn].forEach((btn) =>
+    btn.addEventListener("click", () => toggleMenu(nav, menuBtn))
+  );
+};
+
 const appearOptions = {
   threshold: 0.4,
 };

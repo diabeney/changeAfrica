@@ -1,17 +1,11 @@
 import {
   _append,
-  getElement,
-  toggleMenu,
   appearOnScroll,
   fadeInOnScroll,
+  menuBtnHandler,
 } from "./src/Utils/Helpers";
 
-const root = document.getElementById("app");
-const [menuBtn, closeBtn, nav] = getElement(".menu", ".close", "nav");
-
-[menuBtn, closeBtn].forEach((btn) =>
-  btn.addEventListener("click", () => toggleMenu(nav, menuBtn))
-);
+menuBtnHandler();
 
 const faders = document.querySelectorAll(".main-text");
 const sliders = document.querySelectorAll(".main-image");
