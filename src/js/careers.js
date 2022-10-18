@@ -1,4 +1,5 @@
-import { menuBtnHandler, getElement } from "../Utils/Helpers";
+import { getElement, menuBtnHandler } from "../Utils/Helpers";
+
 menuBtnHandler();
 
 const [contactElement] = getElement(["#contact"]);
