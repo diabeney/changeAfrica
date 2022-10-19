@@ -92,6 +92,15 @@ mark {
   color: var(--main-col-blue);
 }
 
+/* Reduce animation for those who have turned it off */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Utility Classes */
 .btn {
   padding: 0.6rem;
@@ -102,6 +111,12 @@ mark {
   color: #fff;
   border-radius: 4px;
   transition: all 250ms ease-in;
+}
+
+.enhance-background {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .btn:hover {
@@ -172,7 +187,7 @@ mark {
 
 header {
   width: 100%;
-  height: 100vh;
+  height: max(100vh, 30em);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -236,6 +251,7 @@ nav ul li a:hover {
   place-content: center;
   width: 100%;
   margin-inline: auto;
+  margin-top: 2rem;
 }
 
 .text-box h1 {
@@ -288,6 +304,7 @@ nav ul li a:hover {
 }
 
 main {
+  position: relative;
   width: 100vw;
   margin-top: 2rem;
 }
@@ -354,7 +371,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(22, 25, 27, 0.794);
+  background-color: rgba(0, 68, 114, 0.794);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +379,7 @@ main {
 }
 
 .wrapper h1 {
-  color: rgb(159, 225, 255);
+  color: rgb(254, 255, 250);
   font-size: 32px;
   margin-block: 0.8rem;
 }

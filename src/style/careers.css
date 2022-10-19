@@ -73,6 +73,13 @@ body {
   height: fit-content;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .menu,
 .close {
   z-index: 100000;
