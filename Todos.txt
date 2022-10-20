@@ -1,4 +1,3 @@
 
 Build blog page.
-Remove all square brackets when getting an element from the dom
 Remove all pseudo text.

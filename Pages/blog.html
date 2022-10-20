@@ -4,9 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src//style//blog.css" />
     <title>Blog Page</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="menu">
+      <img src="../assets/imgs/menu (1).png" alt="" />
+    </div>
+    <header class="hero-section">
+      <nav data-visible="false">
+        <div class="close">
+          <img src="/assets/imgs/close.png" alt="" />
+        </div>
+        <section class="logo">
+          <span><a href="/">Avem-Ed | Africa</a></span>
+        </section>
+        <ul>
+          <li><a href="/Pages/careers.html">Careers</a></li>
+          <li><a href="/Pages/blog.html">Blog</a></li>
+          <li><a href="" id="contact">Contact Us</a></li>
+          <li>
+            <a href="/Pages/learn.html">Learn more</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="text-box">
+        <div class="text">
+          <h1>Trending this week.</h1>
+        </div>
+        <div class="news-container">
+          <article class="news">
+            <section class="title">
+              <span class="number">01</span>
+              <span class="content"
+                ><a href="">Avem-Ed annual conference</a></span
+              >
+            </section>
+            <section class="identifiers">
+              <span class="tag">General</span>
+              <span class="date">Oct 18, 2022</span>
+            </section>
+          </article>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="recent">
+        <section class="recent-news-container">
+          <section class="wrapper"></section>
+        </section>
+        <aside></aside>
+      </section>
+    </main>
+    <script type="module" src="../src/js/blog.js"></script>
   </body>
 </html>
