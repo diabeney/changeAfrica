@@ -418,6 +418,10 @@ footer {
     margin-inline: auto;
   }
 
+  .text-box {
+    margin-block: 6rem;
+  }
+
   .hero-section nav {
     position: absolute;
     left: 0;
